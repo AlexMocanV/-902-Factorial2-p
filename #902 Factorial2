@@ -1,0 +1,18 @@
+int det(int a)
+{
+    int produs=1;
+    int i=2;
+    while(a>produs)
+    {
+        produs*=i++;
+    }
+    if(a==produs)
+        return a;
+    else
+    {
+        if(produs-a<a-produs/(i-1)){
+            return produs;
+        }
+        return produs/(i-1);
+    }
+}
